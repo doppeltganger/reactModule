@@ -4,7 +4,7 @@ const initialState = {
 	isLoading: false,
 	isShowSnackbar: false,
 	isShowAlert: false,
-	isShowModalWindow: true,
+	isShowModalWindow: false,
 	errorMessage: '',
 };
 
