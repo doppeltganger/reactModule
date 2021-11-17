@@ -4,7 +4,7 @@ import { appFunctions } from '../redux/actions/appActions';
 import { movieFunctions } from '../redux/actions/movieActions';
 import { fetchUserSuccess } from '../redux/actions/userActions';
 
-// POPULAR MOVIES
+//fetch popular movies
 export const fetchMovie = (page = 1) => {
 	return async (dispatch) => {
 		try {
@@ -18,7 +18,7 @@ export const fetchMovie = (page = 1) => {
 	};
 };
 
-// FIND
+//find movie
 export const findMovie = (searchValue, page) => {
 	return async (dispatch) => {
 		try {
@@ -32,7 +32,7 @@ export const findMovie = (searchValue, page) => {
 	};
 };
 
-// FILTER
+// filter movies
 export const filterMovie = (filter, page) => {
 	return async (dispatch) => {
 		try {
@@ -46,7 +46,7 @@ export const filterMovie = (filter, page) => {
 	};
 };
 
-// GENRES
+//get genre list
 export const listGenres = () => {
 	return async (dispatch) => {
 		try {
@@ -58,7 +58,7 @@ export const listGenres = () => {
 	};
 };
 
-// LANGUAGES
+//get language list
 export const listLanguages = () => {
 	return async (dispatch) => {
 		try {
@@ -72,7 +72,7 @@ export const listLanguages = () => {
 	};
 };
 
-// SHOW INFO MOVIE
+//get detailed info about movies
 export const getInfoAboutMovieById = (movieId) => {
 	return async (dispatch) => {
 		try {
@@ -86,8 +86,7 @@ export const getInfoAboutMovieById = (movieId) => {
 	};
 };
 
-// auth
-
+//authentication
 export const generateSessionAndGetUser = (requestToken) => {
 	return async (dispatch) => {
 		try {
@@ -102,7 +101,6 @@ export const generateSessionAndGetUser = (requestToken) => {
 };
 
 // mark favorite
-
 export const addToFavoriteMovie = (accountId, sessionId, movieId, status) => {
 	return async (dispatch) => {
 		try {
@@ -114,7 +112,6 @@ export const addToFavoriteMovie = (accountId, sessionId, movieId, status) => {
 };
 
 // get favorite movies
-
 export const showFavoriteMovies = (accountId, sessionId) => {
 	return async (dispatch) => {
 		try {
@@ -130,7 +127,6 @@ export const showFavoriteMovies = (accountId, sessionId) => {
 };
 
 // get status movie
-
 export const showStatusMovieById = (sessionId, movieId) => {
 	return async (dispatch) => {
 		try {
