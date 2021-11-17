@@ -1,0 +1,11 @@
+.movies-list {
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+
+    &__title {
+        margin: 50px 0;
+    }
+}

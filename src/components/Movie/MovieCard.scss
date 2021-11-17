@@ -1,0 +1,41 @@
+.movie-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 15px;
+    flex: 0 0 calc(100% / 5);
+
+    &__wrap {
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(#000, .2);
+        overflow: hidden;
+    }
+
+    &__button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__visual {
+        cursor: pointer;;
+    }
+
+    &__body {
+        position: relative;
+        padding: 25px 20px 5px;
+        min-height: 140px;
+        font-size: 14px;
+    }
+
+    &__title {
+        margin: 0 0 5px;
+    }
+
+    &__average {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, -60%);
+    }
+}

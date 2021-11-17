@@ -1,0 +1,46 @@
+import CircularProgress from '@mui/material/CircularProgress';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+
+const Average = ({ ...props }) => {
+	return (
+		<Box sx={{ position: 'relative', display: 'inline-flex' }}>
+			<CircularProgress 
+				{ ...props }
+				variant='determinate'
+				thickness={ 5 }
+				size='5rem'
+				sx={ {
+					bgcolor: '#081c22',
+					color: '#d2d531',
+					borderRadius: '50%',
+				} } 
+			/>
+			<Box
+				sx={ {
+					top: 0,
+					left: 0,
+					bottom: 0,
+					right: 0,
+					position: 'absolute',
+					display: 'flex',
+					alignItems: 'center',
+					justifyContent: 'center',
+				} }
+			>
+				<Typography 
+					variant='caption' 
+					component='div'
+					sx={ {
+						fontSize: props.fontSize,
+						color: '#fff',
+					} } 
+				>
+					{`${Math.round(props.value)}%`}
+				</Typography>
+			</Box>
+		</Box>
+	);
+}
+
+export default Average;

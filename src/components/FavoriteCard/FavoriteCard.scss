@@ -1,0 +1,38 @@
+.favorite-card {
+    display: flex;
+    margin: 0 0 20px;
+    padding: 0 20px 0 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(#000, .1);
+    overflow: hidden;
+
+    &__visual {
+        flex: 0 0 calc(100% / 7.5);
+        cursor: pointer;
+    }
+
+    &__image {
+        min-height: 100%;
+    }
+
+    &__body {
+        padding: 30px 0 0 20px;
+    }
+
+    &__header {
+        display: flex;
+    }
+
+    &__average {
+        padding: 5px 0 0;
+    }
+
+    &__info {
+        padding: 0 0 0 10px;
+    }
+
+    &__release {
+        margin: 0 0 20px;
+        font-weight: 200;
+    }
+}

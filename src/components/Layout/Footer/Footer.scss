@@ -1,0 +1,41 @@
+.footer {
+    padding: 20px;
+
+    &__wrap {
+        display: flex;
+    }
+
+    &___visual {
+        flex: 0 0 calc(100% / 4);
+    }
+        
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        flex: 0 0 calc(100% / 4 * 3);
+
+        & a {
+            font-size: 25px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+
+    &__greeting {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        background: #fff;
+        color: #01b4e4;
+        border-radius: 10px;
+    }
+
+    &__copyright {
+        text-align: center;
+        color: #fff;
+    }
+}

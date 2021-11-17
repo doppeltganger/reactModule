@@ -1,0 +1,13 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 30px 0;
+
+    &__title {
+        margin: 0 0 20px
+    }
+
+    &__body {
+        padding: 0 15px;
+    }
+}

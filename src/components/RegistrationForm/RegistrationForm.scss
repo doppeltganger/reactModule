@@ -1,0 +1,27 @@
+.registration {
+    padding: 30px 0 0;
+    font-size: 17px;
+
+    & button {
+        font-size: 18px;
+        text-transform: none;
+        background: #01b4e4;
+        border-radius: 10px;
+
+        &:hover {
+            background: #0d253f;
+        }
+    }
+
+    &__title {
+        margin: 0 0 5px;
+    }
+
+    &__desc {
+        margin: 0 0 40px;
+    }
+
+    &__warn {
+        margin: 0 0 30px;
+    }
+}
